@@ -1,15 +1,6 @@
-.pills-features{
-    color:turquoise;
-    font-size: 20px;
+.border-blog{
+    border:2px solid black;
+    box-shadow: 5px 10px 8px #888888;
     padding:10px;
-    margin-left:40px;
-}
-
-.heading{
-    margin-left:15px;
-    margin-top:10px;
-    font-family:'Aclonica';
-    font-variant:small-caps;
-    font-size: 50px;
-    font-weight: bold;
+    z-index: 1;
 }

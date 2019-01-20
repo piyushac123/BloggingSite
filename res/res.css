@@ -1,3 +1,19 @@
+/*Header*/
+.pills-features{
+    color:turquoise;
+    font-size: 20px;
+    padding:10px;
+    margin-left:40px;
+}
+
+.heading{
+    margin-left:15px;
+    margin-top:10px;
+    font-family:'Aclonica';
+    font-variant:small-caps;
+    font-size: 50px;
+    font-weight: bold;
+}
 .menu-bar{
   position: sticky;
   top: 0;
@@ -6,7 +22,8 @@
     color:turquoise;
     background-color:teal;
 }
-.footer{
+/*Footer*/
+.footer1{
     bottom:0;
     margin-bottom: 0;
     color:turquoise;
@@ -18,6 +35,14 @@
 .foot-text{
     font-size:20px;
     margin-top:10px;
+}
+.linkFoot{
+    color:turquoise;
+    text-decoration: none;
+}
+.linkFoot:hover{
+    color:turquoise;
+    text-decoration: none;
 }
 /*Social media icons*/
 .fa {

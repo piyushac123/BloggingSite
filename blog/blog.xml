@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="blog.xsl"?>
+<Blog>
+	<User>
+		<Name>C</Name>
+		<Username>c</Username>
+		<Email>c@gmail.com</Email>
+		<Quote>I am C.</Quote>
+	</User>
+	<User>
+		<Name>D</Name>
+		<Username>d</Username>
+		<Email>d@gmail.com</Email>
+		<Quote>I am D.</Quote>
+	</User>
+	<User>
+		<Name>A</Name>
+		<Username>a</Username>
+		<Email>a@gmail.com</Email>
+		<Quote>I am A.</Quote>
+	</User>
+	<User>
+		<Name>B</Name>
+		<Username>b</Username>
+		<Email>b@gmail.com</Email>
+		<Quote>I am B.</Quote>
+	</User>
+</Blog>
