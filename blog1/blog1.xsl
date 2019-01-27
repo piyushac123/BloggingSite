@@ -6,7 +6,7 @@
           <title>BLOG</title>
           <meta charset="utf-8"/>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <link rel="stylesheet" href="blog.css"/>
+          <link rel="stylesheet" href="../blog/blog.css"/>
           <link rel="stylesheet" href="../res/res.css"/>
           <link href='https://fonts.googleapis.com/css?family=Aclon' rel='stylesheet'/>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
@@ -19,6 +19,22 @@
             <div>
                 <a href="../feedback/feedback.html"><input type="button" name="feedbackButton" class="feedback" /></a>
             </div>
+            <div>
+                <table class="for-table">
+                    <tr>
+                      <th class="for-row">MY WORK</th>
+                      </tr>
+                    <tr>
+                      <th class="for-row">LIKED</th>
+                    </tr>
+                    <tr>
+                      <th class="for-row">SUBSCRIPTION</th>
+                    </tr>
+                    <tr>
+                      <th class="for-row">TRENDINGS</th>
+                    </tr>
+                </table>
+            </div>
         <header>
         <div class="container-fluid  back1"> 
           <div class="row" style="line-height: 110px;">
@@ -27,10 +43,11 @@
               <div class="col-lg-6">
               <ul class="nav nav-pills" style="float:right;">
                 <li class="active"><a href="../blog/blog.xml" class="pills-features">BLOG</a></li>
-                <li><a href="../about/about.html" class="pills-features">ABOUT</a></li>
+                <li><a href="../about/about.html" class="pills-features" style="margin-right:40px;">ABOUT</a></li>
                   <!--<li><a href="../feedback/feedback.html" class="pills-features">FEEDBACK</a></li>-->
-                <li><a href="../login/login.html" class="pills-features">LOGIN</a></li>
-                <li><a href="../signup/signup.html" class="pills-features">SIGN UP</a></li>
+                <li>
+                    <a href="../login/login.html" class="pills-features"><img src="../image1/index1.png" alt="Image" width="50" height="50"/> a@gmail.com</a>
+                  </li>
               </ul>
           </div>
            </div>

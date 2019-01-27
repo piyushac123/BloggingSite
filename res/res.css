@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 /*Header*/
 .pills-features{
     color:turquoise;
@@ -14,9 +17,10 @@
     font-size: 50px;
     font-weight: bold;
 }
-.menu-bar{
+header{
   position: sticky;
   top: 0;
+    z-index: 10;
 }
 .back1{
     color:turquoise;
@@ -79,4 +83,37 @@
   background: #007bb5;
   color: white;
     font-size:25px;
+}
+/*FEEDBACK BOX*/
+.feedback{
+    height:200px;
+    width:30px;
+    right:0;
+    top:40%;
+    position:fixed;
+    z-index:10;
+    font:12pt Calibri bold;
+    font-variant:small-caps;
+    color:white;
+	text-shadow: 0 0 0;
+    /*box-shadow*/
+	box-shadow: 0 1px 4px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.2), inset 0 -1px 1px rgba(255,255,255,.1);
+	/*linear-gradient*/
+	background: linear-gradient(#333,#666);
+    border: 1px solid #333;
+}
+/*RHS table*/
+.for-table{
+    position:fixed;
+    top:40%;
+    left:5%;
+    width:20%;
+}
+.for-row{
+    padding:10px;
+    border:1px solid black;
+}
+.for-row:hover{
+    background-color: darkgray;
+    cursor:pointer;
 }
