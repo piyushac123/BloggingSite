@@ -1,6 +1,43 @@
 /*function func(){
     window.location.replace("../blog1/blog1.xml");
 }*/
+function funcForget()								 
+{ 	
+	var email = document.forms["RegForm"]["email1"];
+	var password = document.forms["RegForm"]["password1"];
+    var confirm = document.forms["RegForm"]["confpassword1"];
+    var value1="";
+	var flag=0;
+    if((email.value=='')||(password.value=='')||(confirm.value=='')){
+    if(email.value==''){
+        value1+='Email is empty\n';
+        email.focus();
+        flag=1;
+    }
+    if(password.value==''){
+        value1+='Password is empty\n';
+        password.focus();
+        flag=1;
+    }
+    if(confirm.value==''){
+        value1+='Confirm is empty\n';
+        confirm.focus();
+        flag=1;
+    }
+    }
+    else{
+        if(password.value!=confirm.value){
+            value1+='Confirm Password failed';
+            flag=1;
+        }
+    }
+    if(flag==1){
+        alert(value1);
+        return false;
+    }
+        return true;
+    
+}
 function func1()								 
 { 		 
 	var email = document.forms["RegForm"]["Email"]; 

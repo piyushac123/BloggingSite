@@ -9,6 +9,18 @@ $(document).ready(function(){
     $(".css2").addClass('css1').removeClass('css2');
   });
 });*/
+function dirAbsent(){
+    $(document).ready(function(){
+    $("#section1").show();
+      /*$("#section2").hide();
+      $("#section3").hide();
+      $("#section4").hide();*/
+      $("#section5").hide();
+    $('#section6').hide();
+    $('#section7').hide();
+        $('.footRelative1').addClass('footRelative2').removeClass('footRelative1');
+});
+}
 function callIfLogin(){
 $(document).ready(function(){
     $("#section1").show();

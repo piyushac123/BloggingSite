@@ -53,6 +53,14 @@
                         <?php
                     }
                 }
+            $path1='blogData/'.$email;
+            if(!is_dir($path1)){
+                ?>
+                <script>
+                    dirAbsent();
+                </script>
+                <?php
+            }
             mysqli_close($con);
             ?>
             <div id="selectionBox">
@@ -219,10 +227,10 @@
                 <div class="col-lg-8">
                     <h1>Add Post</h1>
                     <form action="createBlog.php" method="post">
-                        <input type="text" placeholder="Enter email" name="email" class="arrange1" value="<?php echo $email ?>"/><br/>
-                        <input type="text" name="blogName" placeholder="Enter blog name" class="arrange1"/><br/>
+                        <input type="text" placeholder="Enter email" name="email" class="arrange1" value="<?php echo $email ?>" required/><br/>
+                        <input type="text" name="blogName" placeholder="Enter blog name" class="arrange1" required/><br/>
                         <input type="text" name="blogType" placeholder="Enter blog type(eg. Nature blog, Food blog, etc)" class="arrange1"/><br/>
-                        <textarea style="resize:vertical" cols="50" name="blogContent" placeholder="Enter Blog Content" class="arrange1 height1"></textarea><br/>
+                        <textarea style="resize:vertical" cols="50" name="blogContent" placeholder="Enter Blog Content" class="arrange1 height1" required></textarea><br/>
                         <input type="submit" value="POST"/>
                     </form>
                 </div>
