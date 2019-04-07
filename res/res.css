@@ -6,7 +6,7 @@ body{
     color:turquoise;
     font-size: 20px;
     padding:10px;
-    margin-left:40px;
+    margin-left:50px;
 }
 
 .heading{
@@ -27,6 +27,12 @@ header{
     background-color:teal;
 }
 /*Footer*/
+.footRelative1{
+    position:relative;bottom:0;width: 100%;margin-top:300px;z-index:1
+}
+.footRelative2{
+    position:absolute;bottom:0;width: 100%;margin-top:300px;z-index:1
+}
 .footer1{
     bottom:0;
     margin-bottom: 0;

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" href="signup.css">
+        <script src="signup.js"></script>
+    </head>
+    <body>
+        <section class="sectionclass">
+            <form name="RegForm" method="Post" action="signup.php" style="border:1px solid #000; size:100px" onsubmit="return func1()">
+                <div class="formclass">
+                <h1>Sign Up</h1>
+                <hr>
+                <h4>Enter First Name* :</h4>
+                <input type="text" placeholder="Enter First Name" name="fname" >
+                <p id="fn"></p>
+                <h4>Enter Last Name* :</h4>
+                <input type="text" placeholder="Enter Last Name" name="lname" >
+                <p id="ln"></p>
+                <h4>Enter Email* :</h4>
+                <input type="email" placeholder="Enter Email" name="email" style="width: 80%">
+                <h4>Enter Channel Name* :</h4>
+                <input type="text" placeholder="Enter Channel Name" name="channel">
+                <p id="em" ></p>
+                <h4>Enter Password* :</h4>
+                <input type="password" placeholder="Enter Password" name="pass" >
+                <br>
+                <h4>Confirm Password* :</h4>
+                <input type="password" placeholder="Confirm Password" name="cpass" >
+                <br>
+                    <div class="clearfix">
+                    <button type="reset" class="cancelbtn">Reset</button>
+                    <button type="submit" class="signupbtn">Register</button>
+                </div>
+                <br>
+                <a href="../login/login.html">Already sign up?Login in here.</a>
+                </div>
+                </form>
+            
+
+        </section>
+    </body>
+</html>

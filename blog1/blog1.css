@@ -1,0 +1,22 @@
+.link1{
+    color:black;
+}
+.link1:hover{
+    text-decoration: none;
+    color:black;
+}
+.arrange1{
+    margin-top: 5px;
+    height: 20px;
+    width: 500px;
+}
+.height1{
+    min-height: 500px;
+}
+
+//thumbs up change
+.css1{
+}
+.css2{
+    color:white;
+}

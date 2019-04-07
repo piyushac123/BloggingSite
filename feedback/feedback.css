@@ -1,0 +1,102 @@
+.header {
+  padding: 40px;
+  text-align: center;
+  background: lightblue;
+  color: black;
+  box-shadow: 0px 0px 10px 1px #333;
+}
+body {
+  font-family: Sans-serif;
+}
+.back{
+  background-image: url("blog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login{
+  background-color: #666;
+  color: white;
+  float: right;
+}
+.title
+{
+  width: 100%; 
+  padding: 20px;
+  background: lightblue;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.hbar {
+  overflow: hidden;
+  background-color: black;
+  align-content: center; 
+  box-shadow: 0px 0px 20px 1px #333;
+}
+
+.hbar a {
+  float: left;
+  text-decoration: none;
+  display: block;
+  color: white;  
+  text-align: center;
+  padding: 14px 20px;
+}
+.hbar a.right {
+  float: right;
+}
+.hbar a:hover {
+  color: black;
+  background-color: #bebebe;
+}
+.hbar a.active {
+  background-color: #666;
+  color: white;
+}
+input[type=text],textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+select{
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 6px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+input[type=submit]{
+  background-color: lightblue;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container {
+  width:50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+    background: black(0.5)
+} 
+.container1 {
+  width:60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} 

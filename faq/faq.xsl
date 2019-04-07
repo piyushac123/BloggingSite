@@ -1,33 +1,36 @@
-<!DOCTYPE html>
-<html>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
+<xsl:template match="/">
+<html> 
 <head>
-    <title>BLOG</title>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="../res/res.css">
-    <link rel="stylesheet" href="feedback.css">
-          <link href='https://fonts.googleapis.com/css?family=Aclon' rel='stylesheet'>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="../res/res.js"></script>
-    <script src="feedback.js"></script>
-    
+  <title>BLOG</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="faq.css"/>
+  <link rel="stylesheet" href="../res/res.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Aclon' rel='stylesheet'/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../res/res.js"></script>
+  
 </head>
-<body>
+  <body>
     <div>
         <a href="../feedback/feedback.html"><input type="button" name="feedbackButton" class="feedback" /></a>
     </div>
-    <header>
+    
+<header>
     <div class="container-fluid  back1"> 
       <div class="row" style="line-height: 110px;">
-        <div class="col-lg-6"><a href="../home/home.html" alt="Symbol"><img src="../image1/images.png" alt="Image" width="100" height="100"></a>
+        <div class="col-lg-6"><a href="../home/home.html" alt="Symbol"><img src="../image1/images.png" alt="Image" width="100" height="100"/></a>
           <span class="heading">loggers</span></div>
           <div class="col-lg-6">
           <ul class="nav nav-pills" style="float:right;">
             <li><a href="../blog1/blog1.php" class="pills-features">BLOG</a></li>
-            <li class="active"><a href="../about/about.html" class="pills-features">ABOUT</a></li>
+            <li><a href="../about/about.html" class="pills-features">ABOUT</a></li>
               <!--<li><a href="../feedback/feedback.html" class="pills-features">FEEDBACK</a></li>-->
             <li><a href="../login/login.html" class="pills-features">LOGIN</a></li>
             <li><a href="../signup/signup.html" class="pills-features">SIGN UP</a></li>
@@ -35,33 +38,24 @@
       </div>
        </div>
     </div>
-
 </header>
-<div>
-<form class="container" name="Feed" action="feedback.php" method="post" >
-<h2 class="title">Feedback</h2>
 
-    <label><b>First Name*</b></label><br>
-    <input name="fname" type="text" placeholder="Your name.." required><br>
+<div style="margin-left: 20%;">
+<form class="container1">
+<h2 class="title">FAQ</h2>
+    <ul>
+  <xsl:for-each select="FAQ/s"> 
 
-    <label>Last Name*</label><br>
-    <input name="lname" type="text" placeholder="Your last name.." required><br>
+      <li style="margin-top:20px;"><h4><b><xsl:value-of select="question"/></b></h4> 
+      <h5><div style="text-indent:20px;"><xsl:value-of select="answer"/></div></h5></li>
 
-    <label>Country</label><br>
-    <input name="country" type="text" placeholder="Your country name.."><br>
-
-    <label><b>Was blog helpful?*</b></label><br>
-    <input name="grp1" type="radio" value="Yes" required> Yes
-    <input name="grp1" type="radio" value="No" required> No<br><br>
-
-    <label><b>Comment</b></label><br>
-    <textarea name="comment" placeholder="Write something.." style="height:200px;resize: none"></textarea><br>
-
-    <b><input type="submit" value="Submit"></b>
-
+  </xsl:for-each> 
+    </ul>
 </form>
 </div>
-        <footer style="position:relative;bottom:0;width: 100%;margin-top:300px;">
+
+  <button ><a href ="feedback.html" style="text-decoration: none;color:black;">back</a></button>
+  <footer style="position:absolute;bottom:0;width: 100%;margin-top:300px;">
             <div  class="footer1 container-fluid" style="position:absolute;bottom:0;width:100%">
             <div class="row">
                   <div class="col-lg-4">
@@ -93,6 +87,8 @@
             </div>
             </div>
             </footer>
+</body> 
+</html> 
+</xsl:template> 
+</xsl:stylesheet> 
 
-</body>
-</html>
